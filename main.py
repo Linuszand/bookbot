@@ -23,13 +23,13 @@ def count_words(text):
 
 def count_chars(text):
     chars =  {}
-    for count in text:
-        if count.isalpha():
+    for char in text:
+        if char.isalpha():
 
-            if count in chars:
-                chars[count] += 1
+            if char in chars:
+                chars[char] += 1
             else:
-                chars[count] = 1
+                chars[char] = 1
     sorted_dict = sorted(chars.items(), key=lambda x: x[1], reverse=True)
     return sorted_dict
 main()
